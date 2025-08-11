@@ -1,3 +1,4 @@
+import streamlit as st
 import re
 from collections import Counter
 
@@ -38,3 +39,4 @@ def rectify(word):
     "return the most probable spelling correction for `word` out of all the `possible_corrections`"
     correct_word = max(possible_corrections(word), key=prob)
     return correct_word
+
